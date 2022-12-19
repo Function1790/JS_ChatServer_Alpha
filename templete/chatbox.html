@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="chatbox.css">
+<div class="chat_display">
+    <!--record-->
+    <div class="chat_data_container">
+        <div class="chat_data">
+
+            <div class="chat_box_container">
+                <div class="chat_box_usericon">
+                    <img src="./images/user1.png" alt="user1">
+                </div>
+                <div class="chat_box_textdata_container">
+                    <div class="chat_box_textdata">
+                        죽는 날까지 하늘을 우러러
+                        한 점 부끄럼이 없기를,
+                        잎새에 이는 바람에도
+                        나는 괴로워했다.
+                        별을 노래하는 마음으로
+                        모든 죽어가는 것을 사랑해야지
+                        그리고 나한테 주어진 길을
+                        걸어가야겠다.
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat_box_container sender_isme">
+                <div class="chat_box_textdata_container">
+                    <div class="chat_box_textdata">
+                        어쩔티비
+                    </div>
+                </div>
+            </div>
+            
+            ${chat_data}
+
+        </div>
+    </div>
+    <!--record-->
+    <form action="/send_message" method="get">
+        <!--send-->
+        <div class="textbox_container">
+            <label for="content"></label>
+            <textarea placeholder="메세지를 입력하세요." cols="50" rows="2" name="content" id="send_content"></textarea>
+            <div id="send_submit_container">
+                <input type="submit" id="send_sumbit" alt="send" value="보내기">
+            </div>
+        </div>
+        <!--send-->
+    </form>
+    <script src="chatbox.js"></script>
+</div>
